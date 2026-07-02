@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:mobile": "playwright test --project=mobile-chrome",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
     "test:ui": "playwright test --ui",
-    "test:report": "playwright show-report",
-    "test:chromium": "playwright test --project=chromium",
-    "test:firefox": "playwright test --project=firefox",
-    "test:webkit": "playwright test --project=webkit"
+    "test:report": "playwright show-report playwright-report",
+    "test:trace": "playwright show-trace",
+    "test:login": "playwright test tests/login.spec.ts",
+    "test:forgot": "playwright test tests/forgot-password.spec.ts",
+    "test:dashboard": "playwright test tests/dashboard.spec.ts",
+    "test:monitor": "playwright test tests/monitor.spec.ts"
   },
   "repository": {
     "type": "git",
