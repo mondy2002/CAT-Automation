@@ -4,19 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "test:chromium": "playwright test --project=chromium",
-    "test:mobile": "playwright test --project=mobile-chrome",
-    "test:headed": "playwright test --headed",
+    "clean": "npx rimraf playwright-report test-results",
+    "test": "npx rimraf playwright-report test-results && playwright test",
+    "test:chromium": "npx rimraf playwright-report test-results && playwright test --project=chromium",
+    "test:mobile": "npx rimraf playwright-report test-results && playwright test --project=mobile-chrome",
+    "test:headed": "npx rimraf playwright-report test-results && playwright test --headed",
     "test:debug": "playwright test --debug",
     "test:ui": "playwright test --ui",
     "test:report": "playwright show-report playwright-report",
     "test:trace": "playwright show-trace",
-    "test:login": "playwright test tests/login.spec.ts",
-    "test:forgot": "playwright test tests/forgot-password.spec.ts",
-    "test:dashboard": "playwright test tests/dashboard.spec.ts",
-    "test:monitor": "playwright test tests/monitor.spec.ts",
-    "test:workflows": "playwright test tests/monitor-audit-workflows.spec.ts"
+    "test:login": "npx rimraf playwright-report test-results && playwright test tests/login.spec.ts",
+    "test:forgot": "npx rimraf playwright-report test-results && playwright test tests/forgot-password.spec.ts",
+    "test:dashboard": "npx rimraf playwright-report test-results && playwright test tests/dashboard.spec.ts",
+    "test:monitor": "npx rimraf playwright-report test-results && playwright test tests/monitor.spec.ts",
+    "test:workflows": "npx rimraf playwright-report test-results && playwright test tests/monitor-audit-workflows.spec.ts"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.0.1",
     "dotenv": "^17.4.2",
+    "rimraf": "^6.1.3",
     "typescript": "^6.0.3"
   }
 }
