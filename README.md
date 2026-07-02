@@ -36,7 +36,8 @@ CAT-Automation/
 ├── tests/
 │   ├── login.spec.ts           # Login page test cases
 │   ├── forgot-password.spec.ts # Forgot password test cases
-│   └── dashboard.spec.ts       # Dashboard test cases
+│   ├── dashboard.spec.ts       # Dashboard test cases
+│   └── monitor.spec.ts         # Monitor page test cases
 ├── .env                    # Local credentials (gitignored)
 ├── playwright.config.ts    # Playwright configuration
 └── tsconfig.json           # TypeScript configuration
@@ -93,6 +94,7 @@ RESET_TEST_EMAIL=
 npx playwright test tests/login.spec.ts
 npx playwright test tests/forgot-password.spec.ts
 npx playwright test tests/dashboard.spec.ts
+npx playwright test tests/monitor.spec.ts
 ```
 
 ### Run by test title (grep)
@@ -162,6 +164,24 @@ projects: [
 | Sidebar | Links present, Monitor navigation, Reports navigation |
 | **Data Accuracy** | KPI card numbers vs `/api/dashboard/stats` API (7 cards), overall score ring %, activity totals and pending badges, score band counts, CQC ring %, badges, yes/no/n-a counts |
 | **KPI vs Monitor** | In Progress and Completed 30d counts match the Monitor page |
+
+---
+
+### Monitor (`tests/monitor.spec.ts`) — 112 tests
+
+| Describe block | What's tested |
+|---|---|
+| Page Load | Correct URL, page wrapper, KPI grid, table card, audit list header, at least one row |
+| KPI Cards | All 7 cards present by label, non-negative numbers, correct colour variants (danger/amber/blue/purple/rose) |
+| Filter Chips | 7 chips displayed, "All" active by default, each chip count cross-checks KPI card values, each chip click activates it and deactivates "All", "All" resets correctly, status-based filters (In Progress / Scheduled / Completed / Pending Review) show matching rows |
+| Tabs | 2 tabs (Audits + Tasks), Audits active by default, tab badges match KPI cards, tab switching activates/deactivates correctly |
+| Search | Input visible with placeholder, empty on load, filters rows in real-time, no-match term returns zero rows, clearing restores full list, URL unchanged, case-insensitive |
+| Filter Buttons | 4 buttons visible (Auditor / Group / Unarchived / Type), each click is handled client-side without navigation |
+| Audit List Columns | Header row visible, all 7 named column headers in correct order |
+| Audit List Rows | Non-empty audit name, valid status badge, DD/MM/YYYY due date, group tag, View and overflow buttons per row, all rows have valid statuses |
+| Filter + Search Combined | Chip + search narrows further, clearing search restores chip count, tab switch shows separate list |
+| **Data Accuracy – UI vs API** | "All"/"In Progress"/"Overdue" chip counts match their KPI cards, Tasks/Audits tab badges match KPI cards, Total Audits KPI matches `/api/audit-instances` response, Tasks Total KPI matches `/api/user-tasks` response |
+| Navigation | Sidebar link navigates to /monitor, direct URL works, navigate-away-and-back reloads correctly, browser back/forward work |
 
 ---
 

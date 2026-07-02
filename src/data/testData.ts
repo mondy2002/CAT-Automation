@@ -16,6 +16,7 @@ export const urls = {
   login: '/auth/login',
   dashboard: '/dashboard',
   forgotPassword: '/auth/forgot-password',
+  monitor: '/monitor',
 };
 
 export const messages = {
