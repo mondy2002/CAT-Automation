@@ -1,0 +1,65 @@
+{
+  "allMenuItems": [
+    {
+      "text": "quiz Questions",
+      "tag": "BUTTON",
+      "className": "menu-item menu-item--purple ng-star-inserted",
+      "role": null,
+      "onClick": false,
+      "innerHTML": "<span _ngcontent-xtn-c12=\"\" class=\"material-symbols-outlined\">quiz</span> Questions"
+    },
+    {
+      "text": "quiz",
+      "tag": "SPAN",
+      "className": "material-symbols-outlined",
+      "role": null,
+      "onClick": false,
+      "innerHTML": "quiz"
+    },
+    {
+      "text": "swap_horiz Reassign",
+      "tag": "BUTTON",
+      "className": "menu-item ng-star-inserted",
+      "role": null,
+      "onClick": false,
+      "innerHTML": "<span _ngcontent-xtn-c12=\"\" class=\"material-symbols-outlined\">swap_horiz</span> Reassign"
+    },
+    {
+      "text": "swap_horiz",
+      "tag": "SPAN",
+      "className": "material-symbols-outlined",
+      "role": null,
+      "onClick": false,
+      "innerHTML": "swap_horiz"
+    },
+    {
+      "text": "",
+      "tag": "DIV",
+      "className": "menu-divider ng-star-inserted",
+      "role": null,
+      "onClick": false,
+      "innerHTML": ""
+    },
+    {
+      "text": "delete Delete",
+      "tag": "BUTTON",
+      "className": "menu-item menu-item--red ng-star-inserted",
+      "role": null,
+      "onClick": false,
+      "innerHTML": "<span _ngcontent-xtn-c12=\"\" class=\"material-symbols-outlined\">delete</span> Delete"
+    },
+    {
+      "text": "delete",
+      "tag": "SPAN",
+      "className": "material-symbols-outlined",
+      "role": null,
+      "onClick": false,
+      "innerHTML": "delete"
+    }
+  ],
+  "menuStructure": {
+    "html": "<!----><!----><button _ngcontent-xtn-c12=\"\" class=\"menu-item menu-item--purple ng-star-inserted\"><span _ngcontent-xtn-c12=\"\" class=\"material-symbols-outlined\">quiz</span> Questions</button><!----><button _ngcontent-xtn-c12=\"\" class=\"menu-item ng-star-inserted\"><span _ngcontent-xtn-c12=\"\" class=\"material-symbols-outlined\">swap_horiz</span> Reassign</button><!----><!----><!----><div _ngcontent-xtn-c12=\"\" class=\"menu-divider ng-star-inserted\"></div><!----><button _ngcontent-xtn-c12=\"\" class=\"menu-item menu-item--red ng-star-inserted\"><span _ngcontent-xtn-c12=\"\" class=\"material-symbols-outlined\">delete</span> Delete</button><!---->",
+    "classes": "action-menu-panel ng-star-inserted",
+    "childCount": 4
+  }
+}

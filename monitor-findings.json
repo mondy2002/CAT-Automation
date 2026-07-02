@@ -1,0 +1,117 @@
+{
+  "loginUrl": "https://qc.catclientportal.co.uk/auth/login",
+  "monitorUrl": "https://qc.catclientportal.co.uk/monitor",
+  "detailUrl": "https://qc.catclientportal.co.uk/audits/643?auditId=250&view=1",
+  "rowStructure": {
+    "selectors": {
+      "viewButton": ".al-primary-btn",
+      "overflowButton": ".al-overflow-btn",
+      "statusPill": ".al-cell-status .status-pill",
+      "auditName": ".al-cell-audit .al-audit-name"
+    },
+    "viewButtonText": "visibility View",
+    "overflowButtonExists": true,
+    "statusText": "In Progress",
+    "auditNameText": "Business Continuity - ( Care Home / Establishment ) - 2026-07-02 09:33"
+  },
+  "detailPageStructure": {
+    "title": "CareAuditTool v3.0",
+    "headings": [
+      {
+        "level": "H2",
+        "text": "Does the organisation have in place a strategic (short, medium and long term) plan and review process that covers key metrics such as financial viability, quality and governance , Health and Safety, Human Resources, performance  and sustainability etc?"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "type": "submit",
+        "classes": [
+          "hamburger-btn",
+          "ng-tns-c4-0"
+        ]
+      },
+      {
+        "text": "OrganisationDemo Care Groupunfold_more",
+        "type": "submit",
+        "classes": [
+          "org-trigger-btn",
+          "ng-tns-c4-0"
+        ]
+      },
+      {
+        "text": "group_workGroupAll Groups4unfold_more",
+        "type": "submit",
+        "classes": [
+          "grp-trigger-btn",
+          "ng-tns-c4-0"
+        ]
+      },
+      {
+        "text": "notifications 9+",
+        "type": "submit",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ]
+      },
+      {
+        "text": "mail",
+        "type": "submit",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ]
+      },
+      {
+        "text": "light_mode",
+        "type": "submit",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "theme-toggle-btn"
+        ]
+      },
+      {
+        "text": "settings",
+        "type": "submit",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ]
+      },
+      {
+        "text": "account_circleoa2@demo.localOA",
+        "type": "submit",
+        "classes": [
+          "nav-btn",
+          "nav-btn-user",
+          "ng-tns-c4-0"
+        ]
+      },
+      {
+        "text": "logout",
+        "type": "submit",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ]
+      },
+      {
+        "text": "menuMain expand_less",
+        "type": "button",
+        "classes": [
+          "sidebar-parent-btn",
+          "expanded",
+          "ng-star-inserted"
+        ]
+      }
+    ],
+    "forms": []
+  },
+  "timestamp": "2026-07-02T10:29:13.030Z"
+}

@@ -1,0 +1,276 @@
+{
+  "monitorPage": {
+    "totalRows": 10,
+    "filters": {
+      "selector": ".mon-chips",
+      "chips": [
+        {
+          "text": "All93",
+          "classes": [
+            "chip",
+            "active",
+            "chip--all",
+            "ng-star-inserted"
+          ]
+        },
+        {
+          "text": "Completed29",
+          "classes": [
+            "chip",
+            "chip--green",
+            "ng-star-inserted"
+          ]
+        },
+        {
+          "text": "In Progress7",
+          "classes": [
+            "chip",
+            "chip--blue",
+            "ng-star-inserted"
+          ]
+        },
+        {
+          "text": "Scheduled56",
+          "classes": [
+            "chip",
+            "chip--purple",
+            "ng-star-inserted"
+          ]
+        },
+        {
+          "text": "Pending Review1",
+          "classes": [
+            "chip",
+            "chip--pink",
+            "ng-star-inserted"
+          ]
+        },
+        {
+          "text": "Overdue36",
+          "classes": [
+            "chip",
+            "chip--red",
+            "ng-star-inserted"
+          ]
+        },
+        {
+          "text": "Quick Audit27",
+          "classes": [
+            "chip",
+            "chip--green",
+            "ng-star-inserted"
+          ]
+        }
+      ]
+    },
+    "rowStructure": {
+      "viewButton": {
+        "selector": ".al-primary-btn",
+        "text": "visibility View",
+        "classes": [
+          "al-primary-btn",
+          "ng-star-inserted"
+        ]
+      },
+      "overflowButton": {
+        "selector": ".al-overflow-btn",
+        "classes": [
+          "al-overflow-btn"
+        ]
+      },
+      "statusPill": {
+        "selector": ".al-cell-status .status-pill",
+        "text": "In Progress",
+        "classes": [
+          "status-pill",
+          "pill-inprogress"
+        ]
+      },
+      "auditName": {
+        "selector": ".al-cell-audit .al-audit-name",
+        "text": "Business Continuity - ( Care Home / Establishment ) - 2026-07-02 09:33"
+      }
+    },
+    "sampleRows": [
+      {
+        "auditName": "Business Continuity - ( Care Home / Establishment ) - 2026-07-02 09:33",
+        "status": "In Progress"
+      },
+      {
+        "auditName": "Annual refresher training / competency assessment. - ( Domiciliary / Home Care ) - 2026-07-02 09:29",
+        "status": "In Progress"
+      },
+      {
+        "auditName": "Advocacy - ( Care Home / Establishment )",
+        "status": "Scheduled"
+      }
+    ]
+  },
+  "detailPage": {
+    "auditName": "Business Continuity - ( Care Home / Establishment ) - 2026-07-02 09:33",
+    "url": "https://qc.catclientportal.co.uk/audits/643?auditId=250&view=1",
+    "urlPattern": "/audits/643",
+    "pageTitle": "CareAuditTool v3.0",
+    "headings": [
+      {
+        "level": "H2",
+        "text": "Does the organisation have in place a strategic (short, medium and long term) plan and review process that covers key metrics such as financial viability, quality and governance , Health and Safety, Human Resources, performance  and sustainability etc?"
+      }
+    ],
+    "statusElement": {
+      "selector": ".status-pill",
+      "classes": []
+    },
+    "navigationButtons": [
+      {
+        "text": "OrganisationDemo Care Groupunfold_more",
+        "tagName": "BUTTON",
+        "classes": [
+          "org-trigger-btn",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "group_workGroupAll Groups4unfold_more",
+        "tagName": "BUTTON",
+        "classes": [
+          "grp-trigger-btn",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "notifications 9+",
+        "tagName": "BUTTON",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "mail",
+        "tagName": "BUTTON",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "light_mode",
+        "tagName": "BUTTON",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "theme-toggle-btn"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "settings",
+        "tagName": "BUTTON",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "account_circleoa2@demo.localOA",
+        "tagName": "BUTTON",
+        "classes": [
+          "nav-btn",
+          "nav-btn-user",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "logout",
+        "tagName": "BUTTON",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "menuMain expand_less",
+        "tagName": "BUTTON",
+        "classes": [
+          "sidebar-parent-btn",
+          "expanded",
+          "ng-star-inserted"
+        ],
+        "type": "button"
+      },
+      {
+        "text": "admin_panel_settingsAdministration expand_less",
+        "tagName": "BUTTON",
+        "classes": [
+          "sidebar-parent-btn",
+          "expanded",
+          "ng-star-inserted"
+        ],
+        "type": "button"
+      },
+      {
+        "text": "account_circleAccount expand_less",
+        "tagName": "BUTTON",
+        "classes": [
+          "sidebar-parent-btn",
+          "expanded",
+          "ng-star-inserted"
+        ],
+        "type": "button"
+      },
+      {
+        "text": "arrow_backAudit Execution: Business Continuity - ( Care Home / Establishment )",
+        "tagName": "BUTTON",
+        "classes": [
+          "top-btn",
+          "back"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "format_list_bulleted All Questions",
+        "tagName": "BUTTON",
+        "classes": [
+          "top-btn"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "close Close",
+        "tagName": "BUTTON",
+        "classes": [
+          "top-btn",
+          "close-btn"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "Q1. Does the organisation have in place a strategic (short, medium and long term) plan and review process that covers key metrics such as financial viability, quality and governance , Health and Safety, Human Resources, performance  and sustainability etc?",
+        "tagName": "BUTTON",
+        "classes": [
+          "sidebar-q",
+          "active",
+          "answered"
+        ],
+        "type": "submit"
+      }
+    ],
+    "forms": [],
+    "tabs": [],
+    "questions": [
+      "Does the organisation have in place a strategic (short, medium and long term) plan and review process that covers key metrics such as financial viability, quality and governance , Health and Safety, Human Resources, performance  and sustainability etc?"
+    ]
+  }
+}

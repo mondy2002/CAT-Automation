@@ -1,0 +1,471 @@
+{
+  "monitorPage": {
+    "totalRows": 10,
+    "URL": "https://qc.catclientportal.co.uk/monitor",
+    "filterChips": [
+      {
+        "text": "All93",
+        "classes": [
+          "chip",
+          "active",
+          "chip--all",
+          "ng-star-inserted"
+        ]
+      },
+      {
+        "text": "Completed29",
+        "classes": [
+          "chip",
+          "chip--green",
+          "ng-star-inserted"
+        ]
+      },
+      {
+        "text": "In Progress7",
+        "classes": [
+          "chip",
+          "chip--blue",
+          "ng-star-inserted"
+        ]
+      },
+      {
+        "text": "Scheduled56",
+        "classes": [
+          "chip",
+          "chip--purple",
+          "ng-star-inserted"
+        ]
+      },
+      {
+        "text": "Pending Review1",
+        "classes": [
+          "chip",
+          "chip--pink",
+          "ng-star-inserted"
+        ]
+      },
+      {
+        "text": "Overdue36",
+        "classes": [
+          "chip",
+          "chip--red",
+          "ng-star-inserted"
+        ]
+      },
+      {
+        "text": "Quick Audit27",
+        "classes": [
+          "chip",
+          "chip--green",
+          "ng-star-inserted"
+        ]
+      }
+    ],
+    "rowSelectors": {
+      "row": ".al-row",
+      "viewButton": ".al-primary-btn",
+      "overflowButton": ".al-overflow-btn",
+      "statusPill": ".al-cell-status .status-pill",
+      "auditName": ".al-cell-audit .al-audit-name"
+    },
+    "sampleRows": [
+      {
+        "auditName": "Business Continuity - ( Care Home / Establishment ) - 2026-07-02 09:33",
+        "status": "In Progress"
+      },
+      {
+        "auditName": "Annual refresher training / competency assessment. - ( Domiciliary / Home Care ) - 2026-07-02 09:29",
+        "status": "In Progress"
+      },
+      {
+        "auditName": "Advocacy - ( Care Home / Establishment )",
+        "status": "Scheduled"
+      },
+      {
+        "auditName": "Environmental Management and Sustainable Development - ( Domiciliary / Home Care )",
+        "status": "In Progress"
+      },
+      {
+        "auditName": "Respiratory Viral Infections. Staffing - ( Domiciliary / Home Care )",
+        "status": "Scheduled"
+      }
+    ]
+  },
+  "viewButton": {
+    "audit": {
+      "name": "Business Continuity - ( Care Home / Establishment ) - 2026-07-02 09:33",
+      "status": "In Progress"
+    },
+    "resultURL": "https://qc.catclientportal.co.uk/audits/643?auditId=250&view=1",
+    "urlPattern": "/audits/643?auditId=250&view=1",
+    "isNavigation": true
+  },
+  "detailPageStructure": {
+    "title": "CareAuditTool v3.0",
+    "buttons": [
+      {
+        "text": "OrganisationDemo Care Groupunfold_more",
+        "classes": [
+          "org-trigger-btn",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "group_workGroupAll Groups4unfold_more",
+        "classes": [
+          "grp-trigger-btn",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "notifications 9+",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "mail",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "light_mode",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "theme-toggle-btn"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "settings",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "account_circleoa2@demo.localOA",
+        "classes": [
+          "nav-btn",
+          "nav-btn-user",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "logout",
+        "classes": [
+          "nav-btn",
+          "nav-btn-icon",
+          "ng-tns-c4-0"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "menuMain expand_less",
+        "classes": [
+          "sidebar-parent-btn",
+          "expanded",
+          "ng-star-inserted"
+        ],
+        "type": "button"
+      },
+      {
+        "text": "admin_panel_settingsAdministration expand_less",
+        "classes": [
+          "sidebar-parent-btn",
+          "expanded",
+          "ng-star-inserted"
+        ],
+        "type": "button"
+      },
+      {
+        "text": "account_circleAccount expand_less",
+        "classes": [
+          "sidebar-parent-btn",
+          "expanded",
+          "ng-star-inserted"
+        ],
+        "type": "button"
+      },
+      {
+        "text": "arrow_backAudit Execution: Business Continuity - ( Care Home / Establishment )",
+        "classes": [
+          "top-btn",
+          "back"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "format_list_bulleted All Questions",
+        "classes": [
+          "top-btn"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "close Close",
+        "classes": [
+          "top-btn",
+          "close-btn"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "check Yes",
+        "classes": [
+          "ans-btn",
+          "yes"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "close No",
+        "classes": [
+          "ans-btn",
+          "no"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "Not Applicable",
+        "classes": [
+          "ans-btn",
+          "na",
+          "active"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "arrow_back Prev",
+        "classes": [
+          "nav-btn"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "Next arrow_forward",
+        "classes": [
+          "nav-btn",
+          "next"
+        ],
+        "type": "submit"
+      },
+      {
+        "text": "delete_sweep",
+        "classes": [
+          "ai-panel__icon-btn"
+        ],
+        "type": "submit"
+      }
+    ],
+    "formFields": [
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": ""
+      },
+      {
+        "type": "textarea",
+        "name": "",
+        "id": ""
+      },
+      {
+        "type": "textarea",
+        "name": "",
+        "id": ""
+      }
+    ],
+    "tabs": []
+  },
+  "overflowMenusByStatus": {
+    "Scheduled": {
+      "audit": {
+        "name": "Advocacy - ( Care Home / Establishment )",
+        "status": "Scheduled"
+      },
+      "menuItems": [
+        {
+          "text": "quiz Questions",
+          "tagName": "BUTTON",
+          "classes": [
+            "menu-item",
+            "menu-item--purple"
+          ]
+        },
+        {
+          "text": "quiz",
+          "tagName": "SPAN",
+          "classes": [
+            "material-symbols-outlined"
+          ]
+        },
+        {
+          "text": "swap_horiz Reassign",
+          "tagName": "BUTTON",
+          "classes": [
+            "menu-item",
+            "ng-star-inserted"
+          ]
+        },
+        {
+          "text": "swap_horiz",
+          "tagName": "SPAN",
+          "classes": [
+            "material-symbols-outlined"
+          ]
+        },
+        {
+          "text": "delete Delete",
+          "tagName": "BUTTON",
+          "classes": [
+            "menu-item",
+            "menu-item--red"
+          ]
+        },
+        {
+          "text": "delete",
+          "tagName": "SPAN",
+          "classes": [
+            "material-symbols-outlined"
+          ]
+        }
+      ]
+    },
+    "In Progress": {
+      "audit": {
+        "name": "Business Continuity - ( Care Home / Establishment ) - 2026-07-02 09:33",
+        "status": "In Progress"
+      },
+      "menuItems": []
+    },
+    "Overdue": {
+      "audit": {
+        "name": "Respiratory Viral Infections. Staffing - ( Domiciliary / Home Care )",
+        "status": "Scheduled"
+      },
+      "menuItems": [
+        {
+          "text": "quiz Questions",
+          "tagName": "BUTTON",
+          "classes": [
+            "menu-item",
+            "menu-item--purple"
+          ]
+        },
+        {
+          "text": "quiz",
+          "tagName": "SPAN",
+          "classes": [
+            "material-symbols-outlined"
+          ]
+        },
+        {
+          "text": "swap_horiz Reassign",
+          "tagName": "BUTTON",
+          "classes": [
+            "menu-item",
+            "ng-star-inserted"
+          ]
+        },
+        {
+          "text": "swap_horiz",
+          "tagName": "SPAN",
+          "classes": [
+            "material-symbols-outlined"
+          ]
+        },
+        {
+          "text": "delete Delete",
+          "tagName": "BUTTON",
+          "classes": [
+            "menu-item",
+            "menu-item--red"
+          ]
+        },
+        {
+          "text": "delete",
+          "tagName": "SPAN",
+          "classes": [
+            "material-symbols-outlined"
+          ]
+        }
+      ]
+    },
+    "Completed": {
+      "audit": {
+        "name": "Bedrail Management - ( Care Home / Establishment ) - 2026-06-30 09:02",
+        "status": "Completed"
+      },
+      "menuItems": []
+    },
+    "Pending Review": {
+      "audit": {
+        "name": "Business Continuity - ( Care Home / Establishment ) - 2026-06-28 15:14",
+        "status": "Pending Review"
+      },
+      "menuItems": [
+        {
+          "text": "visibility View",
+          "tagName": "BUTTON",
+          "classes": [
+            "menu-item",
+            "menu-item--blue"
+          ]
+        },
+        {
+          "text": "visibility",
+          "tagName": "SPAN",
+          "classes": [
+            "material-symbols-outlined"
+          ]
+        }
+      ]
+    }
+  },
+  "startAuditWorkflow": {
+    "audit": {
+      "name": "Advocacy - ( Care Home / Establishment )",
+      "status": "Scheduled"
+    },
+    "error": "No Start option"
+  },
+  "continueAuditWorkflow": {
+    "audit": {
+      "name": "Business Continuity - ( Care Home / Establishment ) - 2026-07-02 09:33",
+      "status": "In Progress"
+    },
+    "form": {
+      "url": "https://qc.catclientportal.co.uk/audits/643?auditId=250&view=1",
+      "questions": [
+        "Does the organisation have in place a strategic (short, medium and long term) plan and review process that covers key metrics such as financial viability, quality and governance , Health and Safety, Human Resources, performance  and sustainability etc?"
+      ],
+      "navigationButtons": [
+        "arrow_backAudit Execution: Business Continuity - ( Care Home / Establishment )",
+        "arrow_back Prev",
+        "Next arrow_forward"
+      ],
+      "formPresent": false,
+      "inputFields": 3
+    }
+  },
+  "reassignWorkflow": {
+    "audit": {
+      "name": "Business Continuity - ( Care Home / Establishment ) - 2026-07-02 09:33",
+      "status": "In Progress"
+    },
+    "foundInOverflow": false
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "questionsMenuAction": {
+    "url": "https://qc.catclientportal.co.uk/audits/625/manage-questions",
+    "title": "CareAuditTool v3.0",
+    "modal": true,
+    "navigation": true,
+    "mainContent": [
+      "Manage Questions"
+    ]
+  },
+  "reassignMenuAction": {
+    "modalOpen": true,
+    "url": "https://qc.catclientportal.co.uk/monitor",
+    "formFields": [
+      {
+        "type": "text",
+        "name": "",
+        "id": "",
+        "placeholder": "Search audits…",
+        "value": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "checkbox",
+        "name": "",
+        "id": "",
+        "placeholder": "",
+        "value": "on"
+      },
+      {
+        "type": "select-one",
+        "name": "",
+        "id": "",
+        "value": "0: 10",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "100"
+        ]
+      },
+      {
+        "type": "textarea",
+        "name": "",
+        "id": "",
+        "placeholder": "e.g. Original auditor on leave",
+        "value": ""
+      },
+      {
+        "type": "textarea",
+        "name": "",
+        "id": "",
+        "placeholder": "Ask about audits, compliance, tasks, or how to use the system…",
+        "value": ""
+      }
+    ],
+    "buttons": [
+      {
+        "text": "OrganisationDemo Care Groupunfold_more",
+        "disabled": false,
+        "type": "submit"
+      },
+      {
+        "text": "group_workGroupAll Groups4unfold_more",
+        "disabled": false,
+        "type": "submit"
+      },
+      {
+        "text": "notifications 9+",
+        "disabled": false,
+        "type": "submit"
+      },
+      {
+        "text": "mail",
+        "disabled": false,
+        "type": "submit"
+      },
+      {
+        "text": "light_mode",
+        "disabled": false,
+        "type": "submit"
+      },
+      {
+        "text": "settings",
+        "disabled": false,
+        "type": "submit"
+      }
+    ],
+    "labels": [
+      "Rows 102550100expand_more",
+      "New Auditor *",
+      "Reason (Optional)"
+    ]
+  }
+}

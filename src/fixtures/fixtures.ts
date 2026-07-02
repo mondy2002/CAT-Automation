@@ -3,12 +3,14 @@ import { LoginPage } from '@pages/LoginPage';
 import { DashboardPage } from '@pages/DashboardPage';
 import { MonitorPage } from '@pages/MonitorPage';
 import { ForgotPasswordPage } from '@pages/ForgotPasswordPage';
+import { AuditDetailPage } from '@pages/AuditDetailPage';
 
 type Pages = {
   loginPage: LoginPage;
   dashboardPage: DashboardPage;
   monitorPage: MonitorPage;
   forgotPasswordPage: ForgotPasswordPage;
+  auditDetailPage: AuditDetailPage;
 };
 
 export const test = base.extend<Pages>({
@@ -23,6 +25,9 @@ export const test = base.extend<Pages>({
   },
   forgotPasswordPage: async ({ page }, use) => {
     await use(new ForgotPasswordPage(page));
+  },
+  auditDetailPage: async ({ page }, use) => {
+    await use(new AuditDetailPage(page));
   },
 });
 

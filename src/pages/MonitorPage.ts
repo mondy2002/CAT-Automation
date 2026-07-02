@@ -220,4 +220,32 @@ export class MonitorPage extends BasePage {
     }
     return statuses;
   }
+
+  // ── Overflow menu (action-menu-panel) ──────────────────────────────────────
+
+  async getOverflowMenuItems(): Promise<string[]> {
+    await this.page.locator('.action-menu-panel').waitFor({ state: 'visible', timeout: 5000 });
+    const items = this.page.locator('.action-menu-panel .menu-item');
+    const count = await items.count();
+    const texts: string[] = [];
+    for (let i = 0; i < count; i++) {
+      texts.push((await items.nth(i).textContent())?.trim() ?? '');
+    }
+    return texts;
+  }
+
+  async clickOverflowMenuItem(text: string): Promise<void> {
+    await this.page.locator('.action-menu-panel').waitFor({ state: 'visible', timeout: 5000 });
+    await this.page.locator('.action-menu-panel .menu-item')
+      .filter({ hasText: new RegExp(text, 'i') })
+      .first()
+      .click();
+    await this.page.waitForTimeout(500);
+  }
+
+  // Clicks the status chip then waits until at least one row is rendered
+  async filterByStatus(status: string): Promise<void> {
+    await this.clickChip(status);
+    await this.auditRows.first().waitFor({ state: 'visible', timeout: 10000 });
+  }
 }
