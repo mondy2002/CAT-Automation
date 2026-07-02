@@ -1,0 +1,67 @@
+name: Daily Playwright Tests
+
+on:
+  # Runs every day at midnight UTC (1 AM BST / 2 AM CEST in summer)
+  # Adjust the cron expression if you need a different timezone offset.
+  schedule:
+    - cron: '0 0 * * *'
+
+  # Allows you to trigger a run manually from the GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Run All Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers (Chromium only)
+        run: npx playwright install --with-deps chromium
+
+      - name: Create .env file from secrets
+        run: |
+          echo "TEST_EMAIL=${{ secrets.TEST_EMAIL }}" >> .env
+          echo "TEST_PASSWORD=${{ secrets.TEST_PASSWORD }}" >> .env
+          echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
+
+      - name: Run tests
+        run: npx playwright test --project=chromium
+        env:
+          CI: true
+
+      - name: Upload HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ github.run_number }}
+          path: playwright-report/
+          retention-days: 14
+
+      - name: Upload JUnit XML
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: junit-results-${{ github.run_number }}
+          path: test-results/junit.xml
+          retention-days: 14
+
+      - name: Upload traces on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: traces-${{ github.run_number }}
+          path: test-results/
+          retention-days: 7
