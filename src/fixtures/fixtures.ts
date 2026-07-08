@@ -5,6 +5,7 @@ import { MonitorPage } from '@pages/MonitorPage';
 import { ForgotPasswordPage } from '@pages/ForgotPasswordPage';
 import { AuditDetailPage } from '@pages/AuditDetailPage';
 import { AuditCalendarPage } from '@pages/AuditCalendarPage';
+import { QuickAuditPage } from '@pages/QuickAuditPage';
 
 type Pages = {
   loginPage: LoginPage;
@@ -13,6 +14,7 @@ type Pages = {
   forgotPasswordPage: ForgotPasswordPage;
   auditDetailPage: AuditDetailPage;
   auditCalendarPage: AuditCalendarPage;
+  quickAuditPage: QuickAuditPage;
 };
 
 export const test = base.extend<Pages>({
@@ -33,6 +35,9 @@ export const test = base.extend<Pages>({
   },
   auditCalendarPage: async ({ page }, use) => {
     await use(new AuditCalendarPage(page));
+  },
+  quickAuditPage: async ({ page }, use) => {
+    await use(new QuickAuditPage(page));
   },
 });
 

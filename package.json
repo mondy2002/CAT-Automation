@@ -18,7 +18,8 @@
     "test:dashboard": "npx rimraf playwright-report test-results && playwright test tests/dashboard.spec.ts",
     "test:monitor": "npx rimraf playwright-report test-results && playwright test tests/monitor.spec.ts",
     "test:workflows": "npx rimraf playwright-report test-results && playwright test tests/monitor-audit-workflows.spec.ts",
-    "test:calendar": "npx rimraf playwright-report test-results && playwright test tests/audit-calendar.spec.ts"
+    "test:calendar": "npx rimraf playwright-report test-results && playwright test tests/audit-calendar.spec.ts",
+    "test:quick-audit": "npx rimraf playwright-report test-results && playwright test tests/quick-audit.spec.ts"
   },
   "repository": {
     "type": "git",
