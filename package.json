@@ -19,7 +19,20 @@
     "test:monitor": "npx rimraf playwright-report test-results && playwright test tests/monitor.spec.ts",
     "test:workflows": "npx rimraf playwright-report test-results && playwright test tests/monitor-audit-workflows.spec.ts",
     "test:calendar": "npx rimraf playwright-report test-results && playwright test tests/audit-calendar.spec.ts",
-    "test:quick-audit": "npx rimraf playwright-report test-results && playwright test tests/quick-audit.spec.ts"
+    "test:quick-audit": "npx rimraf playwright-report test-results && playwright test tests/quick-audit.spec.ts",
+    "test:reports": "npx rimraf playwright-report test-results && playwright test tests/reports.spec.ts",
+    "test:groups": "npx rimraf playwright-report test-results && playwright test tests/groups.spec.ts",
+    "test:users": "npx rimraf playwright-report test-results && playwright test tests/users.spec.ts",
+    "test:review-queue": "npx rimraf playwright-report test-results && playwright test tests/review-queue.spec.ts",
+    "test:quick-audit-start": "npx rimraf playwright-report test-results && playwright test tests/quick-audit-start.spec.ts",
+    "test:scheduling-wizard": "npx rimraf playwright-report test-results && playwright test tests/scheduling-wizard.spec.ts",
+    "test:scheduling": "npx rimraf playwright-report test-results && playwright test tests/scheduling.spec.ts",
+    "test:uploads": "npx rimraf playwright-report test-results && playwright test tests/uploads.spec.ts",
+    "test:messaging": "npx rimraf playwright-report test-results && playwright test tests/messaging.spec.ts",
+    "test:surveys": "npx rimraf playwright-report test-results && playwright test tests/surveys.spec.ts",
+    "test:custom-questions": "npx rimraf playwright-report test-results && playwright test tests/custom-questions.spec.ts",
+    "test:question-order": "npx rimraf playwright-report test-results && playwright test tests/question-order.spec.ts",
+    "test:initial-audit-setup": "npx rimraf playwright-report test-results && playwright test tests/initial-audit-setup.spec.ts"
   },
   "repository": {
     "type": "git",

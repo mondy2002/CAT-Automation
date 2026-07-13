@@ -17,6 +17,21 @@ export const urls = {
   dashboard: '/dashboard',
   forgotPassword: '/auth/forgot-password',
   monitor: '/monitor',
+  auditCalendar: '/audits/calendar',
+  quickAuditStart: '/audits/start',
+  reviewQueue: '/audits/review/queue',
+  schedulingWizard: '/scheduling/wizard',
+  quickSchedule: '/scheduling/quick',
+  scheduling: '/scheduling',
+  reports: '/reports',
+  surveys: '/survey',
+  uploads: '/uploads',
+  messaging: '/messaging',
+  groups: '/setup/groups',
+  users: '/setup/users',
+  customQuestions: '/setup/custom-questions',
+  questionOrder: '/setup/question-order',
+  initialAuditSetup: '/setup/initial-audit-setup',
 };
 
 export const messages = {
