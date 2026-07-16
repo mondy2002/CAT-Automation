@@ -37,6 +37,14 @@ jobs:
           echo "TEST_PASSWORD=${{ secrets.TEST_PASSWORD }}" >> .env
           echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
 
+      - name: Verify secrets are configured
+        run: |
+          echo "TEST_EMAIL set: ${{ secrets.TEST_EMAIL != '' }}"
+          echo "TEST_PASSWORD set: ${{ secrets.TEST_PASSWORD != '' }}"
+          echo "BASE_URL set: ${{ secrets.BASE_URL != '' }}"
+          if [ -z "${{ secrets.TEST_EMAIL }}" ]; then echo "ERROR: TEST_EMAIL secret is empty"; exit 1; fi
+          if [ -z "${{ secrets.TEST_PASSWORD }}" ]; then echo "ERROR: TEST_PASSWORD secret is empty"; exit 1; fi
+
       - name: Run tests
         run: npx playwright test --project=chromium
         env:

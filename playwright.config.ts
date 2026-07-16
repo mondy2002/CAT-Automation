@@ -26,6 +26,9 @@ export default defineConfig({
   use: {
     baseURL: process.env.BASE_URL || 'https://qc.catclientportal.co.uk',
 
+    // Required: the QC portal uses a certificate that headless Chrome rejects without this
+    ignoreHTTPSErrors: true,
+
     // No screenshots or video — keeps the report lightweight and fast to load
     screenshot: 'off',
     video: 'off',
